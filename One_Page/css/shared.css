@@ -1,0 +1,410 @@
+/*=======================================================
+    Author: Matt Ross
+    checkoutmy.space
+=========================================================
+    GENERIC STYLES
+======================================================-*/
+
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+
+html {
+    font-family: 'Creepster', sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Creepster', sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+footer,
+nav {
+   display:block;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Creepster', sans-serif;
+}
+
+h1 {
+    line-height: 80px;
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #E91C1C;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+    line-height: 50px;
+    color: #E91C1C;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;   
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix:after,
+.container:after,
+.navbgar:after {
+    clear:both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the images cannot
+    render outside of their container
+    without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.terms {
+    margin-top: 13%;    
+}
+
+
+/*=======================================================
+HOME SECTION STYLES
+=======================================================*/
+#home {
+    background: url(../images/candy.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* Spacer before main title logo */
+    padding-bottom: 500px; /* Spacer after main title logo */
+    color: #fff;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #5fff02;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 6em;
+    text-align: left;
+    font-family: 'Creepster', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    text-transform: uppercase;
+    border: 1px dotted #ff8800;
+    padding: 5px;
+}
+
+/*=======================================================
+CONTACT STYLES
+=======================================================*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: orangered;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5)
+}
+
+#contact {
+    background-color: #f5f3f3;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: #5fff02;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.4pt;
+    word-spacing: 0.3pt;
+}
+
+
+.reservation p {
+    color: 13161B;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+
+
+}
+
+.reservation input[type="number"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100,65,0,0.8);
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+
+.candy-single {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-variant: normal;
+    letter-spacing: 0.4pt;
+    word-spacing: 0.3pt;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: orangered;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+ .candy-single label {
+  flex: 1;
+  font-weight: bold;
+  font-size: 2em;
+  color: orangered
+}
+
+.candy-single input[type="number"] {
+    flex: 0 0 45px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid orange;
+    border-radius: 15px;
+    color: orangered;
+}
+
+h2 .rsvp-text {
+    font-size: large;
+}
+
+.terms {
+    margin: 30px 1px 0 0 ;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(225,225,225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Creepster', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color .3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3); 
+
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #8D8E8F;
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*=======================================================
+FOOTER STYLES
+=======================================================*/
+
+#footer {
+    background: rgba(100,65,0,0.3);
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+
+}
+
+/*=======================================================
+PUMPKIN BORDER
+=======================================================*/
+
+.pumpkin {
+    position: relative;
+      width: 360px;
+      height: 280px;
+      border-radius: 220px / 240px;
+    background-color: #b64d00;
+    background-image: radial-gradient(ellipse at 300px 10px, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+  }
+  
+  .pumpkin:before,
+  .pumpkin:after {
+    content: '';
+    position: absolute;
+    top: 0;
+  
+    width: 100%;
+      height: 100%;
+    border-radius: 180px / 240px;
+  }
+  
+  .pumpkin:before {
+    left: 18%;
+    border-left: 3px solid rgba(0,0,0,0.1)
+  }
+  
+  .pumpkin:after {
+    right: 18%;
+    border-right: 3px solid rgba(0,0,0,0.1)
+  }
+  
+  .pumpkin-stem {
+    position: absolute;
+    top: -34px;
+    left: 160px;
+    height: 40px;
+    width: 40px;
+    background-color: #194d14;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.1) 58%, rgba(0,0,0,.1) 62%, rgba(0,0,0,0.3) 100%);
+  }
