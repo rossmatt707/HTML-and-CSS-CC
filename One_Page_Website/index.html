@@ -3,21 +3,19 @@
 	<head>
 		<title>Halloween Candy Thunder Dome</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	</head>
-	<link rel="stylesheet" href="./css/shared.css">
-	<link rel="stylesheet" href="./css/animations.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/site.webmanifest">
 	<body>
 		<!-- NAV -->
 		<div class="wrap">
 			<div class="menu-container">
 				<ul class="menu">
-					<li><a href="#home" id="link">Enter The Thunder Dome</a></li>
-					<li><a href="#gallery" id="link">Contenders</a></li>
-					<li><a href="#rankingpoll" id="link">Candy Ranking</a></li>
+					<li><a href="#home" class="link">Enter The Thunder Dome</a></li>
+					<li><a href="#gallery" class="link">Contenders</a></li>
+					<li><a href="#rankingpoll" class="link">Candy Ranking</a></li>
 				</ul>
 			</div>
 		</div>
@@ -41,174 +39,146 @@
 				<h1>The Contenders
 					<br>Choose Your Fighter!
 				</h1>
-				<div class="flex-container">
 								
 					<!-- PHOTO-CONTAINER 1 -->
+				<div class="flex-container">
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" alt="Almond Joy">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Almond Joy. A divisive pick.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" alt="Almond Joy" class="hover-shadow">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Almond Joy. A divisive pick.</p>
+						</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 1 -->
 
 					<!-- PHOTO-CONTAINER 2 -->
 					<div class="photo-container">
-						<div class="photo">
 							<img src="./images/thumb/thumbnail_2.jpg" onclick="openModal();currentSlide(2)" alt="Apple">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Apple... Healthy.</p>
-							</div>
-						</div>
+							</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 2 -->
 					
 					<!-- PHOTO-CONTAINER 3 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(3)"  alt="Butterfinger">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Butterfinger.. Classic, crunchy, delicious. I am biased.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(3)"  alt="Butterfinger">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Butterfinger.. Classic, crunchy, delicious. I am biased.</p>
+						</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- PHOTO-CONTAINER 4 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_4.jpg" onclick="openModal();currentSlide(4)"  alt="Candy Corn">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Candy Corn.. I think these are sugar flavored.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_4.jpg" onclick="openModal();currentSlide(4)"  alt="Candy Corn">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Candy Corn.. I think these are sugar flavored.</p>
+						</div>					
 					</div>
 					<!-- END PHOTO-CONTAINER 4 -->
 					
 					<!-- PHOTO-CONTAINER 5 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_5.jpg" onclick="openModal();currentSlide(5)"  alt="Circus Peanuts">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Circus Peanuts. Often used as packing material. Occasionally consumed accidentally by pets.</p>
-							</div>
+						<img src="./images/thumb/thumbnail_5.jpg" onclick="openModal();currentSlide(5)"  alt="Circus Peanuts">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Circus Peanuts. Often used as packing material. Occasionally consumed accidentally by pets.</p>
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 5 -->
 					
 					<!-- PHOTO-CONTAINER 6 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_6.jpg" onclick="openModal();currentSlide(6)"  alt="Bubble Gum">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Bubble Gum. Probably stale. Have chipped teeth? no? want chipped teeth?</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_6.jpg" onclick="openModal();currentSlide(6)"  alt="Bubble Gum">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Bubble Gum. Probably stale. Have chipped teeth? no? want chipped teeth?</p>
+						</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 6 -->
 					
 				
 					<!-- PHOTO-CONTAINER 7 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_7.jpg" onclick="openModal();currentSlide(7)"  alt="Hersheys Bar">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Hersheys Bar. Hey they taste like candles to me but its an American classic.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_7.jpg" onclick="openModal();currentSlide(7)"  alt="Hersheys Bar">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Hersheys Bar. Hey they taste like candles to me but its an American classic.</p>
+						</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 7 -->
 					
 					<!-- PHOTO-CONTAINER 8 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_8.jpg" onclick="openModal();currentSlide(8)"  alt="KitKat">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>KitKat. Popular im America. An Obsession in Japan. Classic crispy chocolate coated.</p>
-							</div>
+						<img src="./images/thumb/thumbnail_8.jpg" onclick="openModal();currentSlide(8)"  alt="KitKat">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>KitKat. Popular im America. An Obsession in Japan. Classic crispy chocolate coated.</p>
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 8 -->
 				
 					<!-- PHOTO-CONTAINER 9 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_9.jpg" onclick="openModal();currentSlide(9)"  alt="Reading Materials">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Reading materials. They come in a variety of flavors. Good lawn decorations.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_9.jpg" onclick="openModal();currentSlide(9)"  alt="Reading Materials">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Reading materials. They come in a variety of flavors. Good lawn decorations.</p>
+						</div>					
 					</div>
 					<!-- END PHOTO-CONTAINER 9 -->
 					
 					<!-- PHOTO-CONTAINER 10 -->
 					<div class="photo-container">
-						<div class="photo">
 							<img src="./images/thumb/thumbnail_10.jpg" onclick="openModal();currentSlide(10)"  alt="Wax Paper Candy">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Weird Wax Paper Peanut Butter Candy. I'm sure these have a more official name.</p>
-							</div>
-						</div>
+							</div>	
 					</div>
 					<!-- END PHOTO-CONTAINER 10 -->
 					
 				
 					<!-- PHOTO-CONTAINER 11 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_11.jpg" onclick="openModal();currentSlide(11)"  alt="M&Ms">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>M&Ms. They come in a variety of flavors. for the purpose of this poll pick your favorite.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_11.jpg" onclick="openModal();currentSlide(11)"  alt="M&Ms">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>M&Ms. They come in a variety of flavors. for the purpose of this poll pick your favorite.</p>
+						</div>	
 					</div>
 					<!-- END PHOTO-CONTAINER 11 -->
 					
 					<!-- PHOTO-CONTAINER 12 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_12.jpg" onclick="openModal();currentSlide(12)"  alt="Reeses Cups">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Reeses Cups. Holiday Reeses. Worth their weight in rhodium. Future post apocalyptic money standard. </p>
-							</div>
+						<img src="./images/thumb/thumbnail_12.jpg" onclick="openModal();currentSlide(12)"  alt="Reeses Cups">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Reeses Cups. Holiday Reeses. Worth their weight in rhodium. Future post apocalyptic money standard. </p>
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 12 -->
 					
 					<!-- PHOTO-CONTAINER 13 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_13.jpg" onclick="openModal();currentSlide(13)"  alt="Skittles">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Skittles. Like M&Ms but fruity and without chocolate. So.. not like M&Ms</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_13.jpg" onclick="openModal();currentSlide(13)"  alt="Skittles">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Skittles. Like M&Ms but fruity and without chocolate. So.. not like M&Ms</p>
+						</div>	
 					</div>
 					<!-- END PHOTO-CONTAINER 13 -->
 					
 					<!-- PHOTO-CONTAINER 14 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_14.jpg" onclick="openModal();currentSlide(14)"  alt="Snickers">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Snickers. King without a crown. Silk tuxedo. Pure luxery.</p>
-							</div>
+						<img src="./images/thumb/thumbnail_14.jpg" onclick="openModal();currentSlide(14)"  alt="Snickers">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Snickers. King without a crown. Silk tuxedo. Pure luxery.</p>
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 14 -->
@@ -216,49 +186,42 @@
 				
 					<!-- PHOTO-CONTAINER 15 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_15.jpg" onclick="openModal();currentSlide(15)"  alt="Sour Patch Kids">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Sour Patch Kids. Candy with a leather jacket. Rebel rebel.</p>
-							</div>
+						<img src="./images/thumb/thumbnail_15.jpg" onclick="openModal();currentSlide(15)"  alt="Sour Patch Kids">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Sour Patch Kids. Candy with a leather jacket. Rebel rebel.</p>
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 15 -->
 					
 					<!-- PHOTO-CONTAINER 16 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_16.jpg" onclick="openModal();currentSlide(16)"  alt="Starburst">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Starburst. The greatest gamble. Could be two reds. Could be an orange and a yellow.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_16.jpg" onclick="openModal();currentSlide(16)"  alt="Starburst">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Starburst. The greatest gamble. Could be two reds. Could be an orange and a yellow.</p>
+						</div>	
 					</div>
 					<!-- END PHOTO-CONTAINER 16 -->
 
 					<!-- PHOTO-CONTAINER 17 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_17.jpg" onclick="openModal();currentSlide(17)"  alt="Tootsie Roll">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Tootsie Roll. The image is a bit crushed. Just like your dreams will be if you get this candy.</p>
-							</div>
+						<img src="./images/thumb/thumbnail_17.jpg" onclick="openModal();currentSlide(17)"  alt="Tootsie Roll">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Tootsie Roll. The image is a bit crushed. Just like your dreams will be if you get this candy.</p>
 						</div>
+
 					</div>
 					<!-- END PHOTO-CONTAINER 17 -->
 					
 					<!-- PHOTO-CONTAINER 18 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_18.jpg" onclick="openModal();currentSlide(18)"  alt="Twizzlers">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Twizzlers. Tastes of vaguely nothing. Strangely addicting. A candy paradox.</p>
-							</div>
-						</div>
+						<img src="./images/thumb/thumbnail_18.jpg" onclick="openModal();currentSlide(18)"  alt="Twizzlers">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to Enlarge</h3>
+							<p>Twizzlers. Tastes of vaguely nothing. Strangely addicting. A candy paradox.</p>
+						</div>						
 					</div>
 					<!-- END PHOTO-CONTAINER 18 -->
 				</div>
@@ -438,8 +401,7 @@
 							Rank them from 1 to 18! 
 						</h1>
 						<div class="reservation">
-						<div class="form-rsvp">
-							<form action="" method="POST">
+							<form method="POST">
 								<div class="candy-ranking">
 									<div class="candy-single">
 										<label for="AlmondJoy">Almond Joy</label>
@@ -514,12 +476,13 @@
 										<input type="number" id="Twizzlers" name="Twizzlers" class="candy-single" min="1" max="18">
 									</div>
 									<div class="form-spacer">
-										<label class="terms"> Terms and Conditions</label>
+										<p class="terms"> Terms and Conditions</p>
 									</div>
 
 									<div class="submit">
 										<input type="submit" value="Submit">
 									</div>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -533,7 +496,7 @@
 			www.halloweencandycagerage.net &nbsp;|&nbsp; &copy; 2024
 		</footer>
 		<!-- END-FOOTE -->
-		
+	<script type="text/javascript" src="./JS/one_page_website.js"></script>
 	</body>
 </html>
 		
