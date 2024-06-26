@@ -354,7 +354,7 @@ MODAL STYLING
 /* Create four equal columns that floats next to eachother */
 .column {
     float: left;
-    width: 25%;
+    width: 6%;
 }
 
 
@@ -379,16 +379,16 @@ MODAL STYLING
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 500px;
 }
 
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 10px;
+    right: 25px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -453,8 +453,10 @@ MODAL STYLING
   color: white;
 }
 
-img.demo {
+img .demo {
   opacity: 0.6;
+  width: 300;
+  height: 169;
 }
 
 .active,
